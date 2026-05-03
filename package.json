@@ -1,0 +1,16 @@
+{
+  "name": "open-library-tests",
+  "version": "1.0.0",
+  "description": "Playwright test suite for Open Library - Advanced Search & Pagination",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test tests/01-ui-pagination.spec.js tests/04-ui-language-filter.spec.js",
+    "test:api": "npx playwright test tests/02-api-parameterized-search.spec.js",
+    "test:integration": "npx playwright test tests/03-integrated-sort-order.spec.js",
+    "test:report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
+}
